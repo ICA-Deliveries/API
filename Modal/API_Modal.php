@@ -93,10 +93,10 @@ $(".the-return").html(
 		<form method="POST" class="data-form"><br>
 		<p>Please Input Necessary Information For ICA Deliveries Job Submission</p>
 		<label>Name: </label><br>
-		<input type="text" name="cust" id="cust" value="" required></input><br>
+		<input type="text" name="cust" id="cust" value="" required></input><br><br>
 		<label>Delivery Recipient's Email: </label><br>
 		<input type="text" name="cust_email" id="cust_email" value="" required></input><br>
-		<label>Phone: </label>
+		<label>Phone: </label><br>
 		<input type="text" name="cust_phone" id="cust_phone" value="" required></input><br>
 		<input type="hidden" class="start" name="origin" id="start" value="13 Tuhans Road, Mt Waverly"></input><br>
 		<label>Destination Address: </label><br>
