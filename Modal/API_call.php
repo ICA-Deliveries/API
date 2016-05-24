@@ -19,7 +19,7 @@ $return = $_POST;
 
 	$auth_code = $return["auth"];
 	$store_id = $return["id"];
-	$customer_name = $return["cust_name"];
+	$customer_name = $return["cust"];
 	$customer_email = $return["cust_email"];
 	$customer_phone = $return["cust_phone"];
 	$origin = $return["origin"];
