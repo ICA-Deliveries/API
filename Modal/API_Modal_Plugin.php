@@ -104,10 +104,10 @@ $(".the-return").html(
 		<form method="POST" class="data-form"><br>
 		<p>Please Input Necessary Information For ICA Deliveries Job Submission</p>
 		<label>Name: </label><br>
-		<input type="text" name="cust" id="cust" value="" required></input><br>
+		<input type="text" name="cust" id="cust" value="" required></input><br><br>
 		<label>Delivery Recipient's Email: </label><br>
 		<input type="text" name="cust_email" id="cust_email" value="" required></input><br>
-		<label>Phone: </label>
+		<label>Phone: </label><br>
 		<input type="text" name="cust_phone" id="cust_phone" value="" required></input><br>
 		<input type="hidden" class="start" name="origin" id="start" value="13 Tuhans Road, Mt Waverly"></input><br>
 		<label>Destination Address: </label><br>
@@ -119,7 +119,7 @@ $(".the-return").html(
 			<li>Saturday-Sunday: 3:00-5:00pm</li>
 		</ul></label><br>
 		<label>Desired Delivery Date: </label><br>
-		<label style="color:green;">Correct Format: 18-05-2016</label><br>
+		<label style="color:green;">Correct Format: dd-mm-yyyy</label><br>
 		<input type="text" name="date" id="date" required></input><br><br>
 		<!-- Please Input Your Provided ID and Authentication Codes Into The Empty The Empty Values -->
 		<input type="hidden" name="id" id="id" value="" readonly></input>
