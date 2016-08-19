@@ -40,7 +40,7 @@ $return = $_POST;
 	$json = stripslashes($json);
 	$results = json_decode($json, true);	
 	
-	//Will have 2 results. Price and Message. If delivery request exceeded 15km or ID and Authentication are invalid, the message will have an error
+	//Will have 2 results. Price and Message. If ID and Authentication are invalid, the message will have an error
 	$price = $results['price'];
 	$message = $results['message'];
 	
