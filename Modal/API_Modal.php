@@ -8,31 +8,6 @@ ob_start();
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-//JQUERY AJAX Calls to process DistanceCheck.php request without leaving modal 
- $("document").ready(function(){ 
- $(".check_distance").submit(function(){ 
-var data = { 
- "action": "test" 
-  };
-  data = $(this).serialize() + "&" + $.param(data); 
- $.ajax({ 
-  type: "POST", 
-  dataType: "json", 
-  url: "/Check_Distance.php", //Relative or absolute path to response.php file 
-  data: data, 
- success: function(data) { 
- $(".the-return").html( 
- data["json"] 
-  );
-$('#start').val(data["origin"]);
-$('#end').val(data["destination"]);  
-  } 
-}); 
- return false; 
-  }); 
- }); 
-</script> 
 <script type="text/javascript"> 
 //Script call to API_call.php to process API Request without leaving modal
  $("document").ready(function(){ 
@@ -76,17 +51,6 @@ $(".the-return").html(
           <h4 class="modal-title">ICA Deliveries</h4>
         </div>
         <div class="modal-body">
-          	<p>Check If Delivery Is Within 15km Distance Limit</p>
-		<!-- Form that collects address for Distance Check-->
-		<form method="POST" class="check_distance">
-		<!-- Please Input Your Stores' Address Inside Of Value -->
-		<input type="hidden" name="origin" value="" id="origin" />
-		<div>
-		<label>Delivery Destination: </label><br> 
- 		<input type="text" name="destination"</input>
-		</div> 
- 		<input type="submit" name="check-distance" value="Check Distance" />
-		</form>
 		<div class="the-return"> 
 		</div>	
 		<!-- Form that collects customer data for API Request -->
