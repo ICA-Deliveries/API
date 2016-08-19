@@ -101,12 +101,6 @@ $(".the-return").html(
 		<input type="hidden" class="start" name="origin" id="start" value="13 Tuhans Road, Mt Waverly"></input><br>
 		<label>Destination Address: </label><br>
 		<input type="text" class="end" name="destination" id="end" value="" required></input><br><br>
-		<label style="font-style:bold;">Delivery Time Slots
-		<ul>
-			<li>Monday-Wednesday: 1:00-3:00pm</li>
-			<li>Thursday-Friday: 7:30-9:30pm</li>
-			<li>Saturday-Sunday: 3:00-5:00pm</li>
-		</ul></label><br>
 		<label>Desired Delivery Date: </label><br>
 		<label style="color:green;">Correct Format: 18-05-2016</label><br>
 		<input type="text" name="date" id="date" required></input><br><br>
