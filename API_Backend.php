@@ -19,6 +19,7 @@ if(isset($_POST["submit"])) {
 	$destination = $_POST["destination"];
 	$suburb = $_POST["suburb"]
 	$date = $_POST["date"];
+	$store_email = $_POST["store_email"];
 
 	//Must use these functions to concatenate the addresses and date for the url request
 	$origin = strtolower(str_replace(' ', '+', $origin));
@@ -27,7 +28,7 @@ if(isset($_POST["submit"])) {
 
 	//URL that makes request to ICA's API
 	//Place data inside url request
-	$url = "http://www.icadeliveries.com/API_proxcheck.php?origin={$origin}&destination={$destination}&start_suburb={$start_suburb}&suburb={$suburb}&date={$date}&cust={$customer_name}&cust_email={$customer_email}&cust_phone={$customer_phone}&id={$store_id}&auth={$auth_code}";
+	$url = "http://www.icadeliveries.com/API_proxcheck.php?origin={$origin}&destination={$destination}&start_suburb={$start_suburb}&suburb={$suburb}&date={$date}&cust={$customer_name}&cust_email={$customer_email}&cust_phone={$customer_phone}&id={$store_id}&store_email={$store_email}&auth={$auth_code}";
 
 	//Return JSON data from ICA
 	$json = file_get_contents($url);
